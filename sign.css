@@ -1,0 +1,186 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif; /* Set a default font */
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* Home Button */
+.home-btn {
+  display: inline-block; /* Make it inline-block for padding */
+  margin-top: 15px; /* Spacing above the button */
+  padding: 10px 30px; /* Button padding */
+  background: linear-gradient(
+    135deg,
+    #f6d365 0%,
+    #fda085 100%
+  ); /* Gradient background */
+  color: #333; /* Button text color */
+  font-weight: bold; /* Bold text */
+  text-decoration: none; /* Remove underline */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  transition: background 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.home-btn:hover {
+  background: linear-gradient(
+    135deg,
+    #fda085 0%,
+    #f6d365 100%
+  ); /* Reverse gradient on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+/* Flexbox for Body */
+body {
+  display: flex;
+  flex-direction: column; /* Arrange children vertically */
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.header_p p {
+  padding-top: 15px;
+  font-size: 20px;
+}
+
+/* Header */
+.header {
+  background-color: #a67f58; /* Match your navbar color */
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Scrolling Text Runner */
+.text-runner {
+  background-color: #333; /* Dark background */
+  color: #ffffff; /* White text */
+  padding: 10px 20px;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: "Courier New", Courier, monospace; /* Cool font */
+  font-size: 1.2rem; /* Font size */
+}
+
+/* Scrolling Text */
+.text-runner p {
+  display: inline-block;
+  animation: scroll-text 10s linear infinite; /* Adjust duration for speed */
+}
+
+/* Animation for scrolling text */
+@keyframes scroll-text {
+  0% {
+    transform: translateX(100%); /* Start from the right */
+  }
+  100% {
+    transform: translateX(-100%); /* Move to the left */
+  }
+}
+
+/* Main Content */
+.main-content {
+  padding: 40px 20px;
+  flex: 1; /* Allow main content to take up available space */
+}
+
+/* Contact Form */
+.contact-form {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #a67f58; /* Focus color */
+}
+
+.submit-btn {
+  background-color: #a67f58; /* Match your navbar color */
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.submit-btn:hover {
+  background-color: #8e6b4b; /* Darker shade on hover */
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #2c3e50;
+  color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .header {
+    padding: 20px 10px; /* Reduced padding for smaller screens */
+  }
+
+  .header_p p {
+    font-size: 18px; /* Smaller font size */
+  }
+
+  .contact-form {
+    padding: 20px; /* Reduce padding for mobile */
+  }
+
+  .contact-form h2 {
+    font-size: 1.5rem; /* Smaller header font size */
+  }
+
+  .text-runner {
+    font-size: 1rem; /* Smaller font size */
+  }
+
+  .home-btn {
+    padding: 8px 20px; /* Adjust button padding */
+  }
+}

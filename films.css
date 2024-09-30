@@ -1,0 +1,413 @@
+* {
+  background-color: #9cba9f;
+}
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap");
+h1 {
+  color: #2f4f4f;
+  font-family: Playwrite Deutschland Grundschrift, sans-serif;
+}
+.preview {
+  width: 100%;
+  height: auto; /* Ensure it adjusts according to content */
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto; /* Center the preview on larger screens */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  /* Adjust this breakpoint as needed */
+  .About__start {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .preview {
+    margin: 20px 0; /* Add some margin for spacing */
+  }
+
+  .posters,
+  .last-containers {
+    flex-direction: column; /* Stack film posters vertically */
+    align-items: center; /* Center film posters */
+  }
+
+  /* Optional: Adjust the width of each film poster on mobile */
+  .posters div,
+  .last-containers div {
+    width: 90%; /* Make film posters take up more space on small screens */
+    margin: 10px 0; /* Add margin for spacing */
+  }
+}
+h2 {
+  color: #f64646d7;
+  font-family: lato;
+  font-weight: 400;
+  font-size: 50px;
+}
+.About__start h1 {
+  margin-top: 0;
+}
+.about-h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* margin-top: 40px; */
+  text-align: center;
+  font-size: 40px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.about-h1 a {
+  text-decoration: none;
+  font-size: 40px;
+}
+
+.About__start h2 {
+  margin-left: 1000px;
+  margin-top: -1000px;
+}
+.preview {
+  width: 500px;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-left: 100px;
+  /* margin-top: 40px; */
+}
+.preview:hover {
+  cursor: pointer;
+  box-shadow: 5px 5px;
+  transition: all 0.5s;
+}
+.preview-img {
+  display: flex; /* Flexbox to align images in a row */
+  width: calc(100% * 8); /* Double the width (because of duplicated images) */
+  animation: slideshow 15s linear infinite;
+}
+/* Slideshow images */
+.preview-img img {
+  width: calc(100% / 6); /* Each image takes up 1/6th of the width */
+  height: auto;
+}
+.posters {
+  display: flex;
+  justify-content: space-evenly;
+}
+.god-f {
+  margin-left: 700px;
+  margin-top: 60px;
+  border: 1px solid;
+  text-align: center;
+  width: 280px;
+  height: 400px;
+  padding-top: 10px;
+  background-color: bisque;
+  flex-direction: column;
+  box-shadow: 2px 2px 4px;
+}
+.god-f:hover {
+  transform: scale(1.075);
+  transition: transform 0.75s ease, opacity 1s ease-in;
+}
+.god-f h3 {
+  background-color: bisque;
+}
+.god-f ul {
+  background-color: bisque;
+}
+.god-f li {
+  background-color: bisque;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.god-f a {
+  text-decoration: none;
+  color: #3b2a20;
+  background-color: bisque;
+}
+.god-f a:hover {
+  cursor: pointer;
+  font-size: 20px;
+  box-shadow: 1px 2px 1px;
+}
+.Shawshank {
+  /* margin-left: 740px; */
+  margin-top: 80px;
+  border: 1px solid;
+  text-align: center;
+  width: 280px;
+  height: 410px;
+  padding-top: 10px;
+  background-color: bisque;
+  flex-direction: column;
+  box-shadow: 2px 2px 4px;
+}
+.Shawshank a {
+  text-decoration: none;
+  color: #3b2a20;
+  background-color: bisque;
+}
+.Shawshank:hover {
+  transform: scale(1.075);
+  transition: transform 0.75s ease, opacity 1s ease-in;
+}
+.Shawshank a:hover {
+  cursor: pointer;
+  font-size: 20px;
+  box-shadow: 1px 2px 1px;
+}
+.Shawshank h3 {
+  background-color: bisque;
+}
+.Shawshank ul {
+  background-color: bisque;
+}
+.Shawshank li {
+  background-color: bisque;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.Shawshank img {
+  width: 188px;
+  height: 268px;
+}
+.list {
+  margin-top: 80px;
+  border: 1px solid;
+  text-align: center;
+  width: 280px;
+  height: 410px;
+  padding-top: 10px;
+  background-color: bisque;
+  flex-direction: column;
+  box-shadow: 2px 2px 4px;
+}
+.list:hover {
+  transform: scale(1.075);
+  transition: transform 0.75s ease, opacity 1s ease-in;
+}
+.list a {
+  text-decoration: none;
+  color: #3b2a20;
+  background-color: bisque;
+}
+.list a:hover {
+  cursor: pointer;
+  font-size: 20px;
+  box-shadow: 1px 2px 1px;
+}
+.list img {
+  width: 188px;
+  height: 268px;
+}
+.list li {
+  background-color: bisque;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 5px;
+}
+.list h3 {
+  background-color: bisque;
+}
+.list ul {
+  background-color: bisque;
+}
+.dark_knight {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-left: 770px;
+  border: 1px solid;
+  text-align: center;
+  width: 280px;
+  height: 410px;
+  padding-top: 10px;
+  background-color: bisque;
+  flex-direction: column;
+  box-shadow: 2px 2px 4px;
+}
+.dark_knight:hover {
+  transform: scale(1.075);
+  transition: transform 0.75s ease, opacity 1s ease-in;
+}
+.dark_knight a {
+  text-decoration: none;
+  color: #3b2a20;
+  background-color: bisque;
+}
+.dark_knight a:hover {
+  cursor: pointer;
+  font-size: 20px;
+  box-shadow: 1px 2px 1px;
+}
+.dark_knight img {
+  width: 188px;
+  height: 268px;
+  margin: auto;
+}
+.dark_knight h3 {
+  background-color: bisque;
+}
+.dark_knight ul {
+  background-color: bisque;
+}
+.dark_knight li {
+  background-color: bisque;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 5px;
+}
+.last-containers {
+  display: flex;
+}
+.inception {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-left: 70px;
+  border: 1px solid;
+  text-align: center;
+  width: 280px;
+  height: 430px;
+  padding-top: 10px;
+  background-color: bisque;
+  flex-direction: column;
+  box-shadow: 2px 2px 4px;
+}
+.inception:hover {
+  transform: scale(1.075);
+  transition: transform 0.75s ease, opacity 1s ease-in;
+}
+.inception a {
+  text-decoration: none;
+  color: #3b2a20;
+  background-color: bisque;
+}
+.inception a:hover {
+  cursor: pointer;
+  font-size: 20px;
+  box-shadow: 1px 2px 1px;
+}
+.inception img {
+  width: 188px;
+  height: 268px;
+  margin: auto;
+}
+.inception ul {
+  background-color: bisque;
+}
+.inception li {
+  background-color: bisque;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 5px;
+  font-size: 18px;
+}
+.inception h3 {
+  background-color: bisque;
+}
+.social_net {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-left: 70px;
+  border: 1px solid;
+  text-align: center;
+  width: 280px;
+  height: 410px;
+  padding-top: 10px;
+  background-color: bisque;
+  flex-direction: column;
+  box-shadow: 2px 2px 4px;
+}
+.social_net:hover {
+  transform: scale(1.075);
+  transition: transform 0.5s ease, opacity 1s ease-in;
+}
+.social_net a {
+  text-decoration: none;
+  color: #3b2a20;
+  background-color: bisque;
+}
+.social_net a:hover {
+  cursor: pointer;
+  font-size: 20px;
+  box-shadow: 1px 2px 1px;
+}
+.social_net img {
+  width: 188px;
+  height: 268px;
+  margin: auto;
+}
+.social_net h3 {
+  background-color: bisque;
+}
+.social_net li {
+  background-color: bisque;
+  padding-top: -5px;
+  font-size: 18px;
+}
+.social_net ul {
+  padding-top: -5px;
+  background-color: bisque;
+}
+.chat-container {
+  max-width: 500px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #f4f4f4;
+}
+.chat-container h1 {
+  text-align: center;
+  background-color: #f4f4f4;
+}
+.chat-box {
+  height: 300px;
+  overflow-y: scroll;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f4f4f4;
+}
+#user-input {
+  background-color: #f4f4f4;
+}
+#user-input input {
+  background-color: #f4f4f4;
+}
+#user-input button {
+  background-color: #f4f4f4;
+}
+.chat-log {
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f4f4;
+}
+
+.chat-log div {
+  margin: 5px 0;
+}
+
+.user-message {
+  background-color: #d9fdd3;
+  align-self: flex-end;
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 80%;
+}
+
+.ai-message {
+  background-color: #f1f0f0;
+  align-self: flex-start;
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 80%;
+}
+@keyframes slideshow {
+  0% {
+    transform: translateX(0); /* Start at the first image */
+  }
+  100% {
+    transform: translateX(-50%); /* Move to the middle (where first set ends) */
+  }
+}

@@ -1,0 +1,213 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background-color: #f0f0f0; /* Light gray for a soft background */
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 18px;
+  background-color: #3b2a20; /* Darker color for header */
+  padding: 20px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.header a {
+  text-decoration: none;
+  color: #f3c436; /* Highlight color for links */
+}
+
+.h-item {
+  color: #f3c436; /* Highlight color for items */
+  padding: 10px 15px;
+  transition: color 0.3s;
+}
+
+.h-item:hover {
+  color: #fff; /* Change to white on hover */
+}
+
+.sign-in-btn {
+  background-color: #f3c436; /* Bright button */
+  color: #3b2a20; /* Dark text for button */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.sign-in-btn:hover {
+  background-color: #3b2a20; /* Dark button on hover */
+  color: #f3c436; /* Change text color */
+}
+
+.hero-section {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #f3c436, #f5e8c7);
+  border-bottom: 8px solid #3b2a20;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 48px;
+  color: #3b2a20;
+  margin-bottom: 20px;
+}
+
+.home-h {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #f3c436; /* Background for the entire section */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow */
+  text-align: center;
+  animation: fadeInSection 1s ease-in-out forwards; /* Fade-in animation */
+}
+
+.home-h h2 {
+  font-size: 2rem;
+  color: #3b2a20; /* Text color */
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.home-h ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.home-h ul li {
+  margin: 15px 0;
+  font-size: 1.2rem;
+  color: #3b2a20;
+  opacity: 0;
+  transform: translateX(-50px); /* Start off-screen */
+  animation: slideIn 0.8s ease forwards;
+}
+
+.home-h ul li:nth-child(1) {
+  animation-delay: 0.5s;
+}
+
+.home-h ul li:nth-child(2) {
+  animation-delay: 0.7s;
+}
+
+.home-h ul li:nth-child(3) {
+  animation-delay: 0.9s;
+}
+
+/* Fade-in for the whole section */
+@keyframes fadeInSection {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Slide-in effect for list items */
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.home-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.popcorn-img,
+.ai-img {
+  width: 300px;
+  margin: 20px;
+  border-radius: 10px; /* Rounded corners for images */
+  transition: transform 0.3s;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow for images */
+}
+
+.popcorn-img:hover,
+.ai-img:hover {
+  transform: scale(1.1); /* Scale effect on hover */
+}
+
+footer {
+  background-color: #2c2c2c; /* Darker footer background for elegance */
+  color: #f3c436; /* Bright text color for contrast */
+  padding: 40px 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.footer_home {
+  max-width: 1200px; /* Centering the footer content */
+  margin: auto;
+  padding: 0 20px;
+  text-align: center; /* Centering all text */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between; /* Even spacing between sections */
+  align-items: flex-start;
+}
+.follow_us a {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 15px; /* Adjusted margin */
+}
+
+.follow_us img {
+  width: 25px; /* Maintain a consistent size */
+  height: auto; /* Ensure aspect ratio is maintained */
+  max-width: 100%; /* Ensure it does not exceed its container */
+  transition: transform 0.3s; /* Adding hover effect */
+}
+
+.follow_us img:hover {
+  transform: scale(1.1); /* Slight scaling effect on hover */
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column; /* Stack footer content on smaller screens */
+    align-items: center; /* Center items */
+  }
+
+  .footer-content div {
+    margin: 10px 0; /* Adjust margin for stacked layout */
+  }
+
+  .follow_us a {
+    margin-left: 0; /* Remove left margin for better centering */
+  }
+}
